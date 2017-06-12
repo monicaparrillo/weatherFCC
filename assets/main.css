@@ -1,0 +1,50 @@
+
+/*
+Custom Styles
+*/
+
+body{
+  font-family: Bubbler One;
+  background-color: #0267C1
+}
+
+.main{
+  width: 70%;
+  color: #F9EBE0;
+  background-color: #0075C4;
+  padding: 40px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 60px;
+  text-align:center
+}
+
+a{
+  color:white;
+  text-align:center;
+}
+.footer{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+a:hover{
+  text-decoration: none;
+  color:white;
+}
+
+p{
+  font-size: 16px;
+}
+
+.btn, .btn:hover{
+  background-color: #0267C1;
+  color:inherit;
+}
+.chosen, .chosen:hover{
+  font-size: 20px;
+  color:yellow;
+}
