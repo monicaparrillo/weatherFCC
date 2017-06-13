@@ -1,6 +1,8 @@
 $(document).ready(function() {
+  $.ajaxSetup({ cache: false });
   var tF, tC;
   var lat, long;
+  var conditions;
   var celsius = false;
   var api_key = "06bdce0aad9e21d625f480b4e5441326";
   $.getJSON("https://freegeoip.net/json/", function(location){
@@ -10,6 +12,7 @@ $(document).ready(function() {
       lat = location.latitude;
       long = location.longitude;
       $.getJSON("https://crossorigin.me/https://api.darksky.net/forecast/" + api_key + "/" + lat + "," + long, function(data){
+        conditions = data.currently.icon;
         tF = parseInt(data.currently.temperature);
         tC = parseInt((tF - 32) * 5/9);
         $("#temp").html(tF + " &#176F");
@@ -24,8 +27,9 @@ $(document).ready(function() {
           $("#c").addClass("chosen")
           $("#f").removeClass("chosen")
         });
+        var skycons = new Skycons({"color": "#EFE6B8"});
+        skycons.add("icon1", conditions);
+        skycons.play();
       });
     });
-
-
   });

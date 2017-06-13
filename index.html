@@ -3,9 +3,10 @@
   <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
-  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="skycons.js"></script>
   <script src="scripts.js"></script>
 </head>
 <body>
@@ -21,10 +22,11 @@
     </h3>
   </div>
     <p id="current">
-      Current Conditions
+      Loading Current Conditions...
     </p>
+    <canvas id="icon1" width="128" height="128"></canvas>
     <p id="temp">
-      Current Temp
+      Loading Current Temp...
     </p>
     <div class="btn chosen" id="f">° F</div>
     <div class="btn" id="c">° C</div>
@@ -32,13 +34,13 @@
   </div>
   <div class="footer">
     <a href="https://darksky.net/poweredby/" alt="Powered By Darksky" title="Powered by darksky" >
-      <img src="https://darksky.net/images/darkskylogo.png" alt="" width="13px"/>
+      <img src="https://darksky.net/images/darkskylogo.png" alt="" width="14px"/>
     Powered By Darksky
-    <img src="https://darksky.net/images/darkskylogo.png" alt="" width="13px"/>
+    <img src="https://darksky.net/images/darkskylogo.png" alt="" width="14px"/>
     </a>
   </div>
 
-</div>
+  </div>
 
   </section>
 </body>
