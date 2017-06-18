@@ -11,37 +11,45 @@
 </head>
 <body>
   <section class="container-fluid">
-<div class="row">
-  <div class="main">
-    <h1>
-  Here's Your Weather!
+  <div class="row">
+    <div class="main">
+      <h1>
+        Here's The Weather This <span id="today">Today</span>!
   </h1>
-  <div>
-    <h3>
-      <span id="city">City</span>, <span id="region">State</span>, <span id="country">Country</span>
+      <div>
+        <h3>
+      <span id="city"></span><span id="region"></span><span id="country"></span>
     </h3>
-  </div>
-    <p id="current">
-      Loading Current Conditions...
-    </p>
-    <canvas id="icon1" width="128" height="128"></canvas>
-    <p id="temp">
-      Loading Current Temp...
-    </p>
-    <div class="btn chosen" id="f">° F</div>
-    <div class="btn" id="c">° C</div>
+      </div>
 
+      <p id="current">
+        Loading Current Conditions...
+      </p>
+      <canvas id="icon1" width="128" height="128"></canvas>
+      <p id="temp">
+        Loading Current Temp...
+      </p>
+
+      <div class="btn-container">
+        <div class="btn chosen" id="f">° F</div>
+        <div class="btn" id="c">° C</div>
+      </div>
+      <h4><br>Weather Warning:</h4>
+      <p id="alert">
+        No Weather Alerts Today!
+      </p>
+    </div>
   </div>
+
   <div class="footer">
-    <a href="https://darksky.net/poweredby/" alt="Powered By Darksky" title="Powered by darksky" >
-      <img src="https://darksky.net/images/darkskylogo.png" alt="" width="14px"/>
-    Powered By Darksky
-    <img src="https://darksky.net/images/darkskylogo.png" alt="" width="14px"/>
+    <a href="https://darksky.net/poweredby/" alt="Powered By Darksky" title="Powered by darksky">
+      <img src="https://darksky.net/images/darkskylogo.png" width="14px" /> Powered By Darksky
+      <img src="https://darksky.net/images/darkskylogo.png" width="14px" />
     </a>
+    <br>
+    <p>Made with <i class="fa fa-coffee fa-sm" aria-hidden="true"></i> <i class="fa fa-plus fa-sm" aria-hidden="true"></i> <i class="fa fa-jquery fa-sm"></i> <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.github.com/monicaparrillo"
+        alt="Monica Github"> Monica</a> </p>
   </div>
-
-  </div>
-
-  </section>
+</section>
 </body>
 </html>

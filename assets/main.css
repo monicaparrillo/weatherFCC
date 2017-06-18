@@ -1,14 +1,16 @@
-
-/*
-Custom Styles
-*/
-
-body{
+body {
   font-family: Bubbler One;
-  background-color: #0267C1
+  background-color: #0267C1;
 }
-
-.main{
+.btn-container{
+  height: 21px;
+  margin:21px 0 40px 0;
+}
+h4{
+  color:#EFE6B8;
+  text-decoration: underline;
+}
+.main {
   width: 70%;
   color: #F9EBE0;
   background-color: #0075C4;
@@ -17,34 +19,38 @@ body{
   margin-top: 100px;
 }
 
-h1{
-  font-size: 60px;
-  text-align:center
+h1 {
+  font-size: 55px;
+  text-align: center;
+  padding-bottom:20px;
 }
 
-a{
-  color:white;
-  text-align:center;
+a {
+  color: white;
+  text-align: center;
 }
-.footer{
+.footer {
   width: 70%;
+  color:white;
   text-align: center;
   margin: auto;
 }
-a:hover{
+a:hover {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
-p{
+p {
   font-size: 16px;
 }
 
-.btn, .btn:hover{
+.btn, .btn:hover {
   background-color: #0267C1;
-  color:inherit;
+  color: inherit;
+  cursor: pointer;
 }
-.chosen, .chosen:hover{
-  font-size: 20px;
-  color:#EFE6B8;
+.chosen, .chosen:hover {
+  font-size: 22px;
+  color: #EFE6B0;
+  cursor: default;
 }
